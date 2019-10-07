@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#0E1546" />
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>inFinity banD</title>
+</head>
+
+<body>
+
+    <div class="full" id="home">
+
+        <!-- Navbar -->
+        <div class="navbar-fixed">
+            <nav class="transparent" id="nav">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#home" class="brand-logo">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#tours">Tours </a></li>
+                            <li><a href="#gallery">Gallery </a></li>
+                            <li><a href="#blog">Blogs </a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile nav -->
+        <ul class="sidenav" id="mobile-nav">
+            <div class="theme white-text h center" style="height:50px;padding:1rem;">inFinity BanD</div>
+            <li><a href="#about"><i class="fas fa-info-circle"></i>&nbsp; About us</a></li>
+            <li><a href="#tours"><i class="fas fa-plane-departure"></i>&nbsp; Tours </a></li>
+            <li><a href="#gallery"><i class="fas fa-images"></i>&nbsp; Gallery </a></li>
+            <li><a href="#blog"><i class="fas fa-edit"></i>&nbsp; Blogs </a></li>
+            <li><a href="#contact"><i class="fas fa-phone"></i>&nbsp; Contact Us</a></li>
+        </ul>
+
+
+        <!-- Carousel -->
+        <div class="carousel carousel-slider">
+
+
+            <div class="carousel-fixed-item band-header center">
+                <h1>inFinity BanD</h1>
+                <p class="flow-text">Rocks ThE staGe</p>
+                <a class="btn btn-large waves-effect white grey-text darken-text-2 custom-white modal-trigger" href="#booknow">book
+                    us now</a>
+            </div>
+            <div class="carousel-item red white-text center" href="#one!" id="first">
+            </div>
+            <div class="carousel-item amber white-text center" href="#two!" id="second">
+            </div>
+            <div class="carousel-item green white-text center" href="#three!" id="third">
+            </div>
+            <div class="carousel-item blue white-text center" href="#four!" id="fourth">
+            </div>
+        </div>
+    </div>
+
+    <!-- Book now modal -->
+    <div id="booknow" class="modal">
+        <div class="modal-content">
+            <h6 class="h center">Fill the details below and we'll be back to you soon</h6>
+            <div class="book-form">
+                <div class="input-field">
+                    <label for="book-name">Name</label>
+                    <input type="text" name="book-name">
+                </div>
+                <div class="input-field col s12 m6">
+                    <label for="book-email">Email</label>
+                    <input type="email" name="book-email">
+                </div>
+                <label for="booking-date">Date of Event</label>
+                <input type="text" class="datepicker">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="btn modal-close theme waves-effect" onclick="showToast('Success, We\'ll be back to you soon')">Submit</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+        </div>
+    </div>
+
+
+    <!-- About -->
+    <div id="about" style="margin-top:70px !important;">
+        <div class="container">
+            <h2 class="center h grey-text">Who <span class="underline">we</span> Are ?</h2>
+            <div class="card about">
+                <div class="card-content h flow-text center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ullam numquam voluptas ipsum ipsam
+                    error. Obcaecati voluptatem accusantium provident doloribus temporibus fugiat repellat perspiciatis
+                    minus? Praesentium, officia. Totam at animi cum itaque.
+                </div>
+            </div>
+        </div>
+
+        <!-- Members -->
+        <div class="container" id="members">
+            <h2 class="center h grey-text"><span class="underline">M</span>embers</h2>
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="images/vocals.jpg">
+                        </div>
+                        <div class="card-content center">
+                            <h5 class="h">John Walker</h5>
+                            <p class="h">Vocalist</p>
+                            <i class="fab fa-twitter"></i>&nbsp;
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="images/guitars.jpg">
+                        </div>
+                        <div class="card-content center">
+                            <h5 class="h">Andrew Smith</h5>
+                            <p class="h">Guitarist</p>
+                            <i class="fab fa-facebook-f"></i>&nbsp;
+                            <i class="fab fa-twitter"></i>&nbsp;
+                            <i class="fab fa-instagram"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="images/drums.jpg">
+                        </div>
+                        <div class="card-content center">
+                            <h5 class="h">Jerome Anderson</h5>
+                            <p class="h">On Drums</p>
+                            <i class="fab fa-facebook-f"></i>&nbsp;
+                            <i class="fab fa-twitter"></i>&nbsp;
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Upcoming tours -->
+    <section id="tours">
+        <h3 class="h center">Upcoming to<span class="underline-white" style>urs</span></h3>
+        <div class="container">
+            <table class="centered">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h5>14 March</h5>
+                        </td>
+                        <td><b>Melbourne, AU <br> Capital arena</b></td>
+                        <td><button class="btn waves-effect custom-white">buy tickets</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>24 April</h5>
+                        </td>
+                        <td><b>Barcelona, Spain <br> Horizon arena</b></td>
+                        <td><button class="btn waves-effect custom-white">buy tickets</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>04 July</h5>
+                        </td>
+                        <td><b>Mumbai, IN <br> Wankhere Stadium</b></td>
+                        <td><button class="btn waves-effect custom-white">buy tickets</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <h3 class="h center grey-text"><i class="fas fa-camera"></i> Gall<span class="underline">er</span>y</h3>
+            <div class="row" id="photos">
+                <div class="col s12 m4">
+                    <img src="https://images.unsplash.com/photo-1472390155757-7704d54b9dc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="materialboxed responsive-img" alt="img">
+                </div>
+                <div class="col s12 m4">
+                    <img src="https://images.unsplash.com/photo-1501285404133-0e100a37c3d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1054&q=80"
+                        class="materialboxed responsive-img" alt="img">
+                </div>
+                <div class="col s12 m4">
+                    <img src="https://images.unsplash.com/photo-1506026667107-3350a4c8eca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="materialboxed responsive-img" alt="img">
+                </div>
+            </div>
+            <div class="row hide-on-med-and-down" id="photos">
+                <div class="col s12 m4">
+                    <img src="https://images.unsplash.com/photo-1505393912938-dbe54c9cce9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="materialboxed responsive-img" alt="img">
+                </div>
+                <div class="col s12 m4">
+                    <img src="https://images.unsplash.com/photo-1517332903664-fd670489c221?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="materialboxed responsive-img" alt="img">
+                </div>
+                <div class="col s12 m4">
+                    <img src="https://images.unsplash.com/photo-1520600661691-801f48869ee4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="materialboxed responsive-img" alt="img">
+                </div>
+            </div>
+            <div class="row hide-on-med-and-down" id="photos">
+                <div class="col s12 m4">
+                    <img src="https://images.unsplash.com/photo-1516067914596-0c4847198905?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="materialboxed responsive-img" alt="img">
+                </div>
+                <div class="col s12 m4">
+                    <img src="https://images.unsplash.com/photo-1488779382325-da88fd3175e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                        class="materialboxed responsive-img" alt="img">
+                </div>
+                <div class="col s12 m4">
+                    <img src="https://images.unsplash.com/46/dpzDUkJrTHb71Yla1EzF_IMG_4098.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                        class="materialboxed responsive-img" alt="img">
+                </div>
+            </div>
+            <p class="center h"><a href="#!">More images &raquo;</a></p>
+        </div>
+    </section>
+
+    <!-- On the blog -->
+    <section id="blog">
+        <h3 class="h center grey-text">From the<span class="underline"> Bl</span>og</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        alt="img">
+                </div>
+                <div class="col s12 m6">
+                    <h4 class="h">
+                        New Single feat. Rude Brothers Out Now!
+                    </h4>
+                    <p class="h"><span class="underline">On 21</span> Jan, 2019</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt voluptates, est, quis
+                        temporibus sed hic, inventore molestiae provident voluptas excepturi!</p>
+                    <a href="#!">Read More &raquo;</a>
+                </div>
+            </div>
+            <div class="row hide-on-med-and-down">
+                <div class="col s12 m6">
+                    <h4 class="h">
+                        Watch us in Sebas Arena on Christmas Eve .
+                    </h4>
+                    <p class="h"><span class="underline">On 21</span> Dec, 2018</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt voluptates, est, quis
+                        temporibus sed hic, inventore molestiae provident voluptas excepturi!</p>
+                    <a href="#!">Read More &raquo;</a>
+                </div>
+                <div class="col s12 m6">
+                    <img src="https://images.unsplash.com/photo-1468392788711-903a924761a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80"
+                        alt="img">
+                </div>
+            </div>
+            <p class="center h"><a href="#!">View all Blog posts &raquo;</a></p>
+        </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="contact">
+        <div class="container">
+            <div class="form">
+                <h3 class="h center">Leave a message</h3>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <i class="fas fa-user prefix"></i>
+                        <label for="name">Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="fas fa-at prefix"></i>
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </div>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope prefix"></i>
+                    <label for="msg">Message</label>
+                    <textarea name="msg" id="msg" cols="30" rows="10" class="materialize-textarea"></textarea>
+                </div>
+                <div class="center">
+                    <button class="btn waves-effect theme" onclick="showToast('Success your message has been sent.')">send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social links and emails -->
+    <section id="links">
+        <h3 class="h center">Get in T<span class="underline-white">ou</span>ch</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 center h">
+                    <h4>Email</h4>
+                    <p>info@infinityband.com</p>
+                </div>
+                <div class="col s12 m4 center h">
+                    <h4>Phone</h4>
+                    <p>+1-321564897</p>
+                </div>
+                <div class="col s12 m4 center h">
+                    <h4>Address</h4>
+                    <p>123/2 Garden Street, CA</p>
+                </div>
+            </div>
+            <h4 class="center h">Soci<span class="underline-white">al</span></h4>
+            <div class="row center" style="margin-top:1.8rem;">
+                <div class="col s6 m2">
+                    <i class="fab fa-facebook-f fa-3x"></i>
+                </div>
+                <div class="col s6 m2">
+                    <i class="fab fa-twitter fa-3x"></i>
+                </div>
+                <div class="col s6 m2">
+                    <i class="fab fa-instagram fa-3x"></i>
+                </div>
+                <div class="col s6 m2">
+                    <i class="fab fa-soundcloud fa-3x"></i>
+                </div>
+                <div class="col s6 m2">
+                    <i class="fab fa-youtube fa-3x"></i>
+                </div>
+                <div class="col s6 m2">
+                    <i class="fab fa-itunes fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <div id="" style="height:500px;"></div> -->
+
+    <footer>
+        <p class="center h">
+            2019 &copy; infinityband.com
+        </p>
+        <p class="h center">
+            <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a href="https://twitter.com/@imishaan005"
+                target="_blank">Ishaan
+                Sheikh</a>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <script src="js/main.js"></script>
+</body>
+
+</html>
